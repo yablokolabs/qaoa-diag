@@ -15,6 +15,10 @@ params, ceiling = multi_start(problem, depth=4)
 print(diagnose(params, problem, depth=4, ceiling=ceiling).verdict)
 ```
 
+![Three measurements feed one verdict: exact ground truth, the measured depth ceiling, and the gradient at the final angles all feed diagnose(), which returns one of four verdicts](docs/diagrams/pipeline.png)
+
+Source: `docs/diagrams/pipeline.html`, exported to SVG and PNG.
+
 ## The four causes
 
 | Verdict | What happened | What to do |
